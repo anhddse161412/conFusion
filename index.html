@@ -9,6 +9,11 @@
 <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 
 <head>
    <title>Ristorante Con Fusion</title>
@@ -222,6 +227,19 @@
       </div>
       <!-- end col -->
    </div>
+   </div>
+   <!--end div of carousel-->
+   <div class="row row content">
+      <div class="btn-group" id="carouselButton">
+         <button class="btn btn-danger btn-sm" id="carousel-pause">
+            <span class="fa fa-pause"></span>
+         </button>
+         <button class="btn btn-danger btn-sm" id="carousel-play">
+            <span class="fa fa-play"></span>
+         </button>
+      </div>
+   </div>
+
 
    <div class="container">
       <!-- slide-->
@@ -245,7 +263,7 @@
       <!--  -->
       <div class="row row-content align-items-center">
          <div class="col-12 col-sm-4 order-sm-first col-md-3">
-            <h3>This Month's Promotions</h3>
+            <h3>This Month' s Promotions</h3>
          </div>
          <div class="col col-sm order-sm-first col-md">
             <div class="media">
@@ -487,10 +505,16 @@
       </div>
    </footer>
 
-   <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script> $(document).ready(function () {
+         $("#myCarousel").carousel({ interval: 2000 }); $("#carousel-pause").click(function () {
+            $("#myCarousel").carousel('pause');
+         }); $("#carousel-play").click(function () {
+            $("#myCarousel").carousel('cycle');
+         });
+      }); </script>
+
+
+
 </body>
 
 </html>
