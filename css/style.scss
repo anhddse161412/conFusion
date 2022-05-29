@@ -74,3 +74,16 @@ body {
     bottom: 0px;
     z-index: 1;
 }
+
+.modal-header{
+    font-weight: bold;
+    color: $lt-gray;
+    background-color: $background-dark;
+}
+
+.modal-body{
+    background-color: $background-pale;
+    label{
+        font-weight: bold;
+    }
+}
