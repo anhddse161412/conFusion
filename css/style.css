@@ -40,17 +40,15 @@ body {
 .carousel {
   background: #512DA8; }
   .carousel .carousel-item {
-    height: 300px; }
+    height: 800px; }
     .carousel .carousel-item img {
       position: absolute;
       top: 0;
       left: 0;
-      min-height: 300px; }
+      min-height: 800px; }
 
 #carouselButton {
-  right: 0px;
-  position: absolute;
-  bottom: 0px;
+  margin: auto;
   z-index: 1; }
 
 .modal-header {
