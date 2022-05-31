@@ -54,9 +54,13 @@ body {
 .modal-header {
   font-weight: bold;
   color: #ddd;
-  background-color: #512DA8; }
+  background-color: #512DA8;
+  border: none; }
 
 .modal-body {
   background-color: #D1C4E9; }
   .modal-body label {
     font-weight: bold; }
+
+.modal-content {
+  border: none; }
